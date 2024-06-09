@@ -1,0 +1,14 @@
+---
+import Base from '../layouts/Base.astro';
+import Navbar from '../components/Navbar.astro';
+import SearchMenu from '../components/SearchMenu.astro';
+import ForceDirectedGraph from '../components/ForceDirectedGraph.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Base>
+    <Navbar slot='navbar' title='Leetgraph'/>
+    <SearchMenu slot='search'  title="search bar" />
+    <ForceDirectedGraph slot='canvas'/>
+    <!-- <Footer slot='footer' message='buri on keys -->'/> -->
+</Base>

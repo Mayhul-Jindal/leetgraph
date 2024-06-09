@@ -1,0 +1,21 @@
+---
+interface Props {
+    title: String;
+}
+
+const { title } = Astro.props;
+---
+<div class="navbar fixed z-10 backdrop-blur-sm">
+    <div class="navbar-start">
+        <button class="btn btn-ghost text-lg">{title}</button>
+    </div>
+    <div class="navbar-end">
+        <button class="btn btn-ghost" popovertarget="searchMenu">
+            🔍 search
+            <kbd class="kbd kbd-sm ml-2 hidden sm:inline-block">ctrl</kbd>
+            <kbd class="kbd kbd-sm hidden sm:inline-block">+</kbd>
+            <kbd class="kbd kbd-sm hidden sm:inline-block">k</kbd>
+        </button>
+    </div>
+</div>
+
